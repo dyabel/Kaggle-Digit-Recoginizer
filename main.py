@@ -13,8 +13,9 @@ from net import mynet
 from utils import AverageMeter, LOG_INFO
 import os
 import pandas as pd
+import csv
 
-model_save_path = './model.pkl'
+model_save_path = './model.pt'
 config = {
     'learning_rate': 0.01,
     'batch_size': 128,
@@ -100,19 +101,30 @@ def adjust_learning_rate(optimizer, epoch):
 
 
 def test(model):
-    data = pd.read_csv('./digit-recognizer/train.csv')
+    f = open('./pred.csv','a',newline='')
+    writer = csv.writer(f)
+    writer.writerow(['ImageId','Label'])
+    data = pd.read_csv('./digit-recognizer/test.csv')
     data_list = data.values.tolist()
-    pred_list = []
-    id_list   = []
+    # pred_list = []
+    # id_list   = []
+    model.cuda()
+    model.eval()
     for id,line in enumerate(data_list):
         image_1d = np.array(line)
         image_2d = image_1d.reshape(28, 28)
-        output = model(image_2d)
+        input = torch.Tensor(image_2d)
+        input.resize_(1,1,input.size(0),input.size(1))
+        input = input.cuda()
+        input = input.to(dtype=torch.float32)
+        output = model(input)
         pred = torch.argmax(output)
-        id_list.append(id+1)
-        pred_list.append(pred)
-    df = pd.DataFrame({'ImageId':id_list,'Label':pred_list})
-    df.to_csv('./pred.csv')
+        # id_list.append(id+1)
+        # pred_list.append(pred.cpu().numpy())
+        writer.writerow([id+1,pred.cpu().numpy()])
+    f.close()
+    # df = pd.DataFrame({'ImageId':id_list,'Label':pred_list})
+    # df.to_csv('./pred.csv')
 
 
 
@@ -135,7 +147,8 @@ def main():
         if epoch % config['test_epoch'] == 0:
             acc = validate(x_val, y_val, model, criterion)
 
-    torch.save(model.state_dict,model_save_path)
+    torch.save(model,model_save_path)
+    test(model)
 
 if __name__ == '__main__':
     main()
