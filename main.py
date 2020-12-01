@@ -23,7 +23,7 @@ sys.stdout = Logger(path+'/log.txt')
 tensor_writer = SummaryWriter('runs/dy')
 losses = AverageMeter()
 
-option='mynet1'
+net_option='mynet1'
 model_save_path = './model.pt'
 output_path = './pred.csv'
 
@@ -153,7 +153,7 @@ def main():
     x_data,y_data = load_data()
 
     # data_spliter = data_split(x_data,y_data,batch_size=config['batch_size'])
-    model = net.__dict__[option]()
+    model = net.__dict__[net_option]()
     model.cuda()
     # model.to(device)
     criterion = nn.CrossEntropyLoss()

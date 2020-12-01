@@ -1,0 +1,363 @@
+data length: 42000
+epoch: 0
+10:51:59.635 Testing,total mean loss 0.15164,total acc 0.95476
+epoch: 1
+epoch: 2
+epoch: 3
+epoch: 4
+epoch: 5
+10:52:28.273 Testing,total mean loss 0.03861,total acc 0.99048
+epoch: 6
+epoch: 7
+epoch: 8
+epoch: 9
+epoch: 10
+10:52:56.530 Testing,total mean loss 0.02609,total acc 0.99143
+epoch: 11
+epoch: 12
+epoch: 13
+epoch: 14
+epoch: 15
+10:53:25.149 Testing,total mean loss 0.01656,total acc 0.99500
+epoch: 16
+epoch: 17
+epoch: 18
+epoch: 19
+epoch: 20
+10:53:53.532 Testing,total mean loss 0.01767,total acc 0.99548
+epoch: 21
+epoch: 22
+epoch: 23
+epoch: 24
+epoch: 25
+10:54:22.072 Testing,total mean loss 0.00561,total acc 0.99881
+epoch: 26
+epoch: 27
+epoch: 28
+epoch: 29
+epoch: 30
+10:54:50.226 Testing,total mean loss 0.00920,total acc 0.99786
+epoch: 31
+epoch: 32
+epoch: 33
+epoch: 34
+epoch: 35
+10:55:18.509 Testing,total mean loss 0.00275,total acc 0.99952
+epoch: 36
+epoch: 37
+epoch: 38
+epoch: 39
+epoch: 40
+10:55:46.959 Testing,total mean loss 0.00203,total acc 0.99929
+epoch: 41
+epoch: 42
+epoch: 43
+epoch: 44
+epoch: 45
+10:56:15.736 Testing,total mean loss 0.00561,total acc 0.99929
+epoch: 46
+epoch: 47
+epoch: 48
+epoch: 49
+epoch: 50
+10:56:44.196 Testing,total mean loss 0.00135,total acc 0.99976
+epoch: 51
+epoch: 52
+epoch: 53
+epoch: 54
+epoch: 55
+10:57:13.045 Testing,total mean loss 0.00079,total acc 1.00000
+epoch: 56
+epoch: 57
+epoch: 58
+epoch: 59
+epoch: 60
+10:57:41.377 Testing,total mean loss 0.00205,total acc 0.99952
+epoch: 61
+epoch: 62
+epoch: 63
+epoch: 64
+epoch: 65
+10:58:10.002 Testing,total mean loss 0.00158,total acc 0.99976
+epoch: 66
+epoch: 67
+epoch: 68
+epoch: 69
+epoch: 70
+10:58:38.177 Testing,total mean loss 0.00091,total acc 1.00000
+epoch: 71
+epoch: 72
+epoch: 73
+epoch: 74
+epoch: 75
+10:59:06.489 Testing,total mean loss 0.00137,total acc 0.99952
+epoch: 76
+epoch: 77
+epoch: 78
+epoch: 79
+epoch: 80
+10:59:34.692 Testing,total mean loss 0.00063,total acc 1.00000
+epoch: 81
+epoch: 82
+epoch: 83
+epoch: 84
+epoch: 85
+11:00:03.038 Testing,total mean loss 0.00057,total acc 0.99976
+epoch: 86
+epoch: 87
+epoch: 88
+epoch: 89
+epoch: 90
+11:00:31.242 Testing,total mean loss 0.00056,total acc 1.00000
+epoch: 91
+epoch: 92
+epoch: 93
+epoch: 94
+epoch: 95
+11:00:59.581 Testing,total mean loss 0.00044,total acc 1.00000
+epoch: 96
+epoch: 97
+epoch: 98
+epoch: 99
+data length: 42000
+epoch: 0
+11:10:54.717 Testing,total mean loss 0.14665,total acc 0.95690
+epoch: 1
+epoch: 2
+epoch: 3
+epoch: 4
+epoch: 5
+11:11:22.851 Testing,total mean loss 0.03991,total acc 0.98857
+epoch: 6
+epoch: 7
+epoch: 8
+epoch: 9
+epoch: 10
+11:11:50.988 Testing,total mean loss 0.05618,total acc 0.98048
+epoch: 11
+epoch: 12
+epoch: 13
+epoch: 14
+epoch: 15
+11:12:19.344 Testing,total mean loss 0.01777,total acc 0.99500
+epoch: 16
+epoch: 17
+epoch: 18
+epoch: 19
+epoch: 20
+11:12:47.707 Testing,total mean loss 0.01864,total acc 0.99524
+epoch: 21
+epoch: 22
+epoch: 23
+epoch: 24
+epoch: 25
+11:13:15.637 Testing,total mean loss 0.00731,total acc 0.99833
+epoch: 26
+epoch: 27
+epoch: 28
+epoch: 29
+epoch: 30
+11:13:43.442 Testing,total mean loss 0.01150,total acc 0.99619
+epoch: 31
+epoch: 32
+epoch: 33
+epoch: 34
+epoch: 35
+11:14:11.323 Testing,total mean loss 0.00252,total acc 1.00000
+epoch: 36
+epoch: 37
+epoch: 38
+epoch: 39
+epoch: 40
+11:14:39.172 Testing,total mean loss 0.00282,total acc 0.99952
+epoch: 41
+epoch: 42
+epoch: 43
+epoch: 44
+epoch: 45
+11:15:07.330 Testing,total mean loss 0.00592,total acc 0.99929
+epoch: 46
+epoch: 47
+epoch: 48
+epoch: 49
+epoch: 50
+11:15:35.431 Testing,total mean loss 0.00163,total acc 0.99976
+epoch: 51
+epoch: 52
+epoch: 53
+epoch: 54
+epoch: 55
+11:16:03.765 Testing,total mean loss 0.00113,total acc 1.00000
+epoch: 56
+epoch: 57
+epoch: 58
+epoch: 59
+epoch: 60
+11:16:31.594 Testing,total mean loss 0.00248,total acc 0.99929
+epoch: 61
+epoch: 62
+epoch: 63
+epoch: 64
+epoch: 65
+11:16:59.471 Testing,total mean loss 0.00273,total acc 0.99929
+epoch: 66
+epoch: 67
+epoch: 68
+epoch: 69
+epoch: 70
+11:17:27.465 Testing,total mean loss 0.00122,total acc 0.99976
+epoch: 71
+epoch: 72
+epoch: 73
+epoch: 74
+epoch: 75
+11:17:55.395 Testing,total mean loss 0.00188,total acc 0.99929
+epoch: 76
+epoch: 77
+epoch: 78
+epoch: 79
+epoch: 80
+11:18:23.242 Testing,total mean loss 0.00089,total acc 1.00000
+epoch: 81
+epoch: 82
+epoch: 83
+epoch: 84
+epoch: 85
+11:18:51.135 Testing,total mean loss 0.00071,total acc 1.00000
+epoch: 86
+epoch: 87
+epoch: 88
+epoch: 89
+epoch: 90
+11:19:18.944 Testing,total mean loss 0.00058,total acc 1.00000
+epoch: 91
+epoch: 92
+epoch: 93
+epoch: 94
+epoch: 95
+11:19:46.773 Testing,total mean loss 0.00088,total acc 1.00000
+epoch: 96
+epoch: 97
+epoch: 98
+epoch: 99
+data length: 42000
+epoch: 0
+11:50:16.192 Testing,total mean loss 0.14255,total acc 0.95786
+epoch: 1
+epoch: 2
+epoch: 3
+epoch: 4
+epoch: 5
+11:50:54.175 Testing,total mean loss 0.03844,total acc 0.98952
+epoch: 6
+epoch: 7
+epoch: 8
+epoch: 9
+epoch: 10
+11:51:32.221 Testing,total mean loss 0.01787,total acc 0.99452
+epoch: 11
+epoch: 12
+epoch: 13
+epoch: 14
+epoch: 15
+11:52:10.383 Testing,total mean loss 0.01674,total acc 0.99595
+epoch: 16
+epoch: 17
+epoch: 18
+epoch: 19
+epoch: 20
+11:52:48.632 Testing,total mean loss 0.01449,total acc 0.99667
+epoch: 21
+epoch: 22
+epoch: 23
+epoch: 24
+epoch: 25
+11:53:26.919 Testing,total mean loss 0.00610,total acc 0.99857
+epoch: 26
+epoch: 27
+epoch: 28
+epoch: 29
+epoch: 30
+11:54:05.792 Testing,total mean loss 0.00805,total acc 0.99738
+epoch: 31
+epoch: 32
+epoch: 33
+epoch: 34
+epoch: 35
+11:54:45.133 Testing,total mean loss 0.00161,total acc 0.99976
+epoch: 36
+epoch: 37
+epoch: 38
+epoch: 39
+epoch: 40
+11:55:24.605 Testing,total mean loss 0.00136,total acc 1.00000
+epoch: 41
+epoch: 42
+epoch: 43
+epoch: 44
+epoch: 45
+11:56:03.917 Testing,total mean loss 0.00459,total acc 0.99952
+epoch: 46
+epoch: 47
+epoch: 48
+epoch: 49
+epoch: 50
+11:56:43.199 Testing,total mean loss 0.00066,total acc 1.00000
+epoch: 51
+epoch: 52
+epoch: 53
+epoch: 54
+epoch: 55
+11:57:22.509 Testing,total mean loss 0.00053,total acc 1.00000
+epoch: 56
+epoch: 57
+epoch: 58
+epoch: 59
+epoch: 60
+11:58:01.881 Testing,total mean loss 0.00099,total acc 0.99976
+epoch: 61
+epoch: 62
+epoch: 63
+epoch: 64
+epoch: 65
+11:58:40.727 Testing,total mean loss 0.00073,total acc 0.99976
+epoch: 66
+epoch: 67
+epoch: 68
+epoch: 69
+epoch: 70
+11:59:19.165 Testing,total mean loss 0.00038,total acc 1.00000
+epoch: 71
+epoch: 72
+epoch: 73
+epoch: 74
+epoch: 75
+11:59:57.400 Testing,total mean loss 0.00056,total acc 1.00000
+epoch: 76
+epoch: 77
+epoch: 78
+epoch: 79
+epoch: 80
+12:00:35.405 Testing,total mean loss 0.00038,total acc 1.00000
+epoch: 81
+epoch: 82
+epoch: 83
+epoch: 84
+epoch: 85
+12:01:13.527 Testing,total mean loss 0.00023,total acc 1.00000
+epoch: 86
+epoch: 87
+epoch: 88
+epoch: 89
+epoch: 90
+12:01:56.489 Testing,total mean loss 0.00020,total acc 1.00000
+epoch: 91
+epoch: 92
+epoch: 93
+epoch: 94
+epoch: 95
+12:02:39.483 Testing,total mean loss 0.00026,total acc 1.00000
+epoch: 96
+epoch: 97
+epoch: 98
+epoch: 99
