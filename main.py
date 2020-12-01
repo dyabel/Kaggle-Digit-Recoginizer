@@ -9,13 +9,30 @@ import torch
 import torch.nn as nn
 import sys
 from load_data import load_data
-from net import mynet
+import net
 from utils import AverageMeter, LOG_INFO
 import os
 import pandas as pd
 import csv
+from logger import Logger
+from torch.utils.tensorboard import SummaryWriter
 
+
+path = os.path.abspath(os.path.dirname(__file__))
+sys.stdout = Logger(path+'/log.txt')
+tensor_writer = SummaryWriter('runs/dy')
+losses = AverageMeter()
+
+option='mynet1'
 model_save_path = './model.pt'
+output_path = './pred.csv'
+
+if os.path.exists(output_path):
+    os.remove(output_path)
+
+# if os.path.exists('runs/dy'):
+#     os.system('rm -rf runs/dy')
+
 config = {
     'learning_rate': 0.01,
     'batch_size': 128,
@@ -62,9 +79,12 @@ def train(x_train, y_train, model, criterion, optimizer, batch_size,epoch):
         # y_pred = model(input).type(torch.LongTensor)
         # label = label.type(torch.LongTensor)
         loss = criterion(y_pred,label)
+        losses.update(loss.item(),input.size(0))
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
+
+    tensor_writer.add_scalar('loss',losses.avg,epoch)
 
 
 
@@ -101,7 +121,7 @@ def adjust_learning_rate(optimizer, epoch):
 
 
 def test(model):
-    f = open('./pred.csv','a',newline='')
+    f = open(output_path,'a',newline='')
     writer = csv.writer(f)
     writer.writerow(['ImageId','Label'])
     data = pd.read_csv('./digit-recognizer/test.csv')
@@ -133,7 +153,7 @@ def main():
     x_data,y_data = load_data()
 
     # data_spliter = data_split(x_data,y_data,batch_size=config['batch_size'])
-    model = mynet()
+    model = net.__dict__[option]()
     model.cuda()
     # model.to(device)
     criterion = nn.CrossEntropyLoss()
