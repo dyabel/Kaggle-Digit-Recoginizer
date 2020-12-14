@@ -2555,3 +2555,944 @@ epoch: 40
 epoch: 41
 epoch: 42
 epoch: 43
+mynet1
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.002, 'weight_decay': 0.0001}
+data length: 42000
+epoch: 0
+epoch: 1
+epoch: 2
+epoch: 3
+epoch: 4
+11:07:58.973 Testing,total mean loss 0.03522,total acc 0.98857,best acc 0.00000
+epoch: 5
+epoch: 6
+epoch: 7
+epoch: 8
+epoch: 9
+11:08:45.916 Testing,total mean loss 0.02927,total acc 0.99000,best acc 0.98857
+epoch: 10
+epoch: 11
+epoch: 12
+epoch: 13
+epoch: 14
+11:09:32.241 Testing,total mean loss 0.02818,total acc 0.98905,best acc 0.99000
+epoch: 15
+epoch: 16
+epoch: 17
+epoch: 18
+epoch: 19
+11:10:17.158 Testing,total mean loss 0.02236,total acc 0.99357,best acc 0.99000
+epoch: 20
+epoch: 21
+epoch: 22
+epoch: 23
+epoch: 24
+11:11:03.463 Testing,total mean loss 0.02344,total acc 0.99095,best acc 0.99357
+epoch: 25
+epoch: 26
+epoch: 27
+epoch: 28
+epoch: 29
+11:11:51.912 Testing,total mean loss 0.02012,total acc 0.99333,best acc 0.99357
+epoch: 30
+epoch: 31
+epoch: 32
+epoch: 33
+epoch: 34
+11:12:44.973 Testing,total mean loss 0.02066,total acc 0.99238,best acc 0.99357
+epoch: 35
+epoch: 36
+epoch: 37
+epoch: 38
+epoch: 39
+11:13:36.262 Testing,total mean loss 0.01857,total acc 0.99381,best acc 0.99357
+epoch: 40
+epoch: 41
+epoch: 42
+epoch: 43
+epoch: 44
+11:14:22.423 Testing,total mean loss 0.02246,total acc 0.99190,best acc 0.99381
+epoch: 45
+epoch: 46
+epoch: 47
+epoch: 48
+epoch: 49
+11:15:07.581 Testing,total mean loss 0.01682,total acc 0.99429,best acc 0.99381
+epoch: 50
+epoch: 51
+epoch: 52
+epoch: 53
+epoch: 54
+11:15:52.068 Testing,total mean loss 0.01808,total acc 0.99429,best acc 0.99429
+epoch: 55
+epoch: 56
+epoch: 57
+epoch: 58
+epoch: 59
+11:16:41.788 Testing,total mean loss 0.02104,total acc 0.99238,best acc 0.99429
+epoch: 60
+epoch: 61
+epoch: 62
+epoch: 63
+epoch: 64
+11:17:35.713 Testing,total mean loss 0.01780,total acc 0.99429,best acc 0.99429
+epoch: 65
+epoch: 66
+epoch: 67
+epoch: 68
+epoch: 69
+11:18:45.271 Testing,total mean loss 0.01784,total acc 0.99381,best acc 0.99429
+epoch: 70
+epoch: 71
+epoch: 72
+epoch: 73
+epoch: 74
+11:19:43.463 Testing,total mean loss 0.01815,total acc 0.99357,best acc 0.99429
+epoch: 75
+epoch: 76
+epoch: 77
+epoch: 78
+epoch: 79
+11:21:11.643 Testing,total mean loss 0.01716,total acc 0.99381,best acc 0.99429
+epoch: 80
+epoch: 81
+epoch: 82
+epoch: 83
+epoch: 84
+11:22:42.215 Testing,total mean loss 0.01897,total acc 0.99452,best acc 0.99429
+epoch: 85
+epoch: 86
+epoch: 87
+epoch: 88
+epoch: 89
+11:24:12.650 Testing,total mean loss 0.02001,total acc 0.99381,best acc 0.99452
+epoch: 90
+epoch: 91
+epoch: 92
+epoch: 93
+epoch: 94
+11:25:43.549 Testing,total mean loss 0.01742,total acc 0.99357,best acc 0.99452
+epoch: 95
+epoch: 96
+epoch: 97
+epoch: 98
+epoch: 99
+11:26:56.688 Testing,total mean loss 0.01769,total acc 0.99405,best acc 0.99452
+11:27:24.007 Testing,total mean loss 0.01769,total acc 0.99405,best acc 0.99452
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.002, 'weight_decay': 0.0001}
+mynet1
+best acc:  tensor(0.9945)
+mynet1
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.002, 'weight_decay': 0.0001}
+mynet1
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.002, 'weight_decay': 0.0001}
+mynet1
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.0001}
+mynet1
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.0001}
+mynet1
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.0001}
+mynet1
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 40, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.0001}
+data length: 42000
+epoch: 0
+epoch: 1
+epoch: 2
+epoch: 3
+epoch: 4
+12:36:57.410 Testing,total mean loss 0.01627,total acc 0.99524,best acc 0.00000
+epoch: 5
+epoch: 6
+epoch: 7
+epoch: 8
+epoch: 9
+12:37:29.022 Testing,total mean loss 0.00606,total acc 0.99881,best acc 0.99524
+epoch: 10
+epoch: 11
+epoch: 12
+epoch: 13
+epoch: 14
+12:38:00.611 Testing,total mean loss 0.00399,total acc 0.99905,best acc 0.99881
+epoch: 15
+epoch: 16
+epoch: 17
+epoch: 18
+epoch: 19
+12:38:32.131 Testing,total mean loss 0.00226,total acc 0.99976,best acc 0.99905
+epoch: 20
+epoch: 21
+epoch: 22
+epoch: 23
+epoch: 24
+12:39:03.505 Testing,total mean loss 0.00107,total acc 1.00000,best acc 0.99976
+epoch: 25
+epoch: 26
+epoch: 27
+epoch: 28
+epoch: 29
+12:39:35.158 Testing,total mean loss 0.00082,total acc 1.00000,best acc 1.00000
+epoch: 30
+epoch: 31
+epoch: 32
+epoch: 33
+epoch: 34
+12:40:06.399 Testing,total mean loss 0.00041,total acc 1.00000,best acc 1.00000
+epoch: 35
+epoch: 36
+epoch: 37
+epoch: 38
+epoch: 39
+12:40:37.825 Testing,total mean loss 0.00036,total acc 1.00000,best acc 1.00000
+12:40:42.674 Testing,total mean loss 0.00036,total acc 1.00000,best acc 1.00000
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 40, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.0001}
+mynet1
+best acc:  tensor(1.)
+best epoch: 24
+mynet1
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.0001}
+data length: 42000
+epoch: 0
+epoch: 1
+epoch: 2
+epoch: 3
+epoch: 4
+12:43:57.082 Testing,total mean loss 0.03945,total acc 0.98690,best acc 0.00000
+epoch: 5
+epoch: 6
+epoch: 7
+epoch: 8
+epoch: 9
+12:44:26.188 Testing,total mean loss 0.03339,total acc 0.98857,best acc 0.98690
+epoch: 10
+epoch: 11
+epoch: 12
+epoch: 13
+epoch: 14
+12:44:55.412 Testing,total mean loss 0.03233,total acc 0.98833,best acc 0.98857
+epoch: 15
+epoch: 16
+epoch: 17
+epoch: 18
+epoch: 19
+12:45:24.251 Testing,total mean loss 0.02376,total acc 0.99238,best acc 0.98857
+epoch: 20
+epoch: 21
+epoch: 22
+epoch: 23
+epoch: 24
+12:45:52.532 Testing,total mean loss 0.02173,total acc 0.99238,best acc 0.99238
+epoch: 25
+epoch: 26
+epoch: 27
+epoch: 28
+epoch: 29
+12:46:20.381 Testing,total mean loss 0.02331,total acc 0.99214,best acc 0.99238
+epoch: 30
+epoch: 31
+epoch: 32
+epoch: 33
+epoch: 34
+12:46:48.575 Testing,total mean loss 0.02392,total acc 0.99214,best acc 0.99238
+epoch: 35
+epoch: 36
+epoch: 37
+epoch: 38
+epoch: 39
+12:47:16.644 Testing,total mean loss 0.02008,total acc 0.99429,best acc 0.99238
+epoch: 40
+epoch: 41
+epoch: 42
+epoch: 43
+epoch: 44
+12:47:42.926 Testing,total mean loss 0.01895,total acc 0.99405,best acc 0.99429
+epoch: 45
+epoch: 46
+epoch: 47
+epoch: 48
+epoch: 49
+12:48:08.991 Testing,total mean loss 0.02103,total acc 0.99476,best acc 0.99429
+epoch: 50
+epoch: 51
+epoch: 52
+epoch: 53
+epoch: 54
+12:48:35.118 Testing,total mean loss 0.01936,total acc 0.99429,best acc 0.99476
+epoch: 55
+epoch: 56
+epoch: 57
+epoch: 58
+epoch: 59
+12:49:01.422 Testing,total mean loss 0.02166,total acc 0.99429,best acc 0.99476
+epoch: 60
+epoch: 61
+epoch: 62
+epoch: 63
+epoch: 64
+12:49:27.451 Testing,total mean loss 0.02050,total acc 0.99500,best acc 0.99476
+epoch: 65
+epoch: 66
+epoch: 67
+epoch: 68
+epoch: 69
+12:49:53.508 Testing,total mean loss 0.02094,total acc 0.99476,best acc 0.99500
+epoch: 70
+epoch: 71
+epoch: 72
+epoch: 73
+epoch: 74
+12:50:44.413 Testing,total mean loss 0.02005,total acc 0.99500,best acc 0.99500
+epoch: 75
+epoch: 76
+epoch: 77
+epoch: 78
+epoch: 79
+12:51:25.123 Testing,total mean loss 0.02117,total acc 0.99500,best acc 0.99500
+epoch: 80
+epoch: 81
+epoch: 82
+epoch: 83
+epoch: 84
+12:51:51.237 Testing,total mean loss 0.02158,total acc 0.99429,best acc 0.99500
+epoch: 85
+epoch: 86
+epoch: 87
+epoch: 88
+epoch: 89
+12:52:17.437 Testing,total mean loss 0.02202,total acc 0.99452,best acc 0.99500
+epoch: 90
+epoch: 91
+epoch: 92
+epoch: 93
+epoch: 94
+12:52:43.826 Testing,total mean loss 0.02015,total acc 0.99524,best acc 0.99500
+epoch: 95
+epoch: 96
+epoch: 97
+epoch: 98
+epoch: 99
+12:53:10.332 Testing,total mean loss 0.01937,total acc 0.99548,best acc 0.99524
+12:53:13.386 Testing,total mean loss 0.01937,total acc 0.99548,best acc 0.99548
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.0001}
+mynet1
+best acc:  tensor(0.9955)
+best epoch: 99
+mynet1
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.0001}
+data length: 42000
+epoch: 0
+epoch: 1
+epoch: 2
+epoch: 3
+epoch: 4
+13:02:30.972 Testing,total mean loss 0.02049,total acc 0.99333,best acc 0.00000
+epoch: 5
+epoch: 6
+epoch: 7
+epoch: 8
+epoch: 9
+13:03:00.396 Testing,total mean loss 0.01311,total acc 0.99667,best acc 0.99333
+epoch: 10
+epoch: 11
+epoch: 12
+epoch: 13
+epoch: 14
+13:03:29.827 Testing,total mean loss 0.00632,total acc 0.99857,best acc 0.99667
+epoch: 15
+epoch: 16
+epoch: 17
+epoch: 18
+epoch: 19
+13:04:03.493 Testing,total mean loss 0.00502,total acc 0.99833,best acc 0.99857
+epoch: 20
+epoch: 21
+epoch: 22
+epoch: 23
+epoch: 24
+13:04:41.108 Testing,total mean loss 0.00268,total acc 0.99952,best acc 0.99857
+epoch: 25
+epoch: 26
+epoch: 27
+epoch: 28
+epoch: 29
+13:05:24.570 Testing,total mean loss 0.00217,total acc 0.99976,best acc 0.99952
+epoch: 30
+epoch: 31
+epoch: 32
+epoch: 33
+epoch: 34
+13:06:02.856 Testing,total mean loss 0.00151,total acc 0.99952,best acc 0.99976
+epoch: 35
+epoch: 36
+epoch: 37
+epoch: 38
+epoch: 39
+13:06:52.561 Testing,total mean loss 0.00087,total acc 1.00000,best acc 0.99976
+epoch: 40
+epoch: 41
+epoch: 42
+epoch: 43
+epoch: 44
+13:07:32.019 Testing,total mean loss 0.00101,total acc 1.00000,best acc 1.00000
+epoch: 45
+epoch: 46
+epoch: 47
+epoch: 48
+epoch: 49
+13:08:09.809 Testing,total mean loss 0.00121,total acc 0.99976,best acc 1.00000
+epoch: 50
+epoch: 51
+epoch: 52
+epoch: 53
+epoch: 54
+13:09:15.646 Testing,total mean loss 0.00070,total acc 0.99976,best acc 1.00000
+epoch: 55
+epoch: 56
+epoch: 57
+epoch: 58
+epoch: 59
+13:10:15.554 Testing,total mean loss 0.00060,total acc 1.00000,best acc 1.00000
+epoch: 60
+epoch: 61
+epoch: 62
+epoch: 63
+epoch: 64
+13:11:38.231 Testing,total mean loss 0.00041,total acc 1.00000,best acc 1.00000
+epoch: 65
+epoch: 66
+epoch: 67
+epoch: 68
+epoch: 69
+13:13:03.122 Testing,total mean loss 0.00040,total acc 1.00000,best acc 1.00000
+epoch: 70
+epoch: 71
+epoch: 72
+epoch: 73
+epoch: 74
+13:14:24.698 Testing,total mean loss 0.00038,total acc 1.00000,best acc 1.00000
+epoch: 75
+epoch: 76
+epoch: 77
+epoch: 78
+epoch: 79
+13:15:43.475 Testing,total mean loss 0.00043,total acc 1.00000,best acc 1.00000
+epoch: 80
+epoch: 81
+epoch: 82
+epoch: 83
+epoch: 84
+13:17:03.201 Testing,total mean loss 0.00030,total acc 1.00000,best acc 1.00000
+epoch: 85
+epoch: 86
+epoch: 87
+epoch: 88
+epoch: 89
+13:18:21.073 Testing,total mean loss 0.00031,total acc 1.00000,best acc 1.00000
+epoch: 90
+epoch: 91
+epoch: 92
+epoch: 93
+epoch: 94
+13:19:38.389 Testing,total mean loss 0.00031,total acc 1.00000,best acc 1.00000
+epoch: 95
+epoch: 96
+epoch: 97
+epoch: 98
+epoch: 99
+13:20:55.200 Testing,total mean loss 0.00027,total acc 1.00000,best acc 1.00000
+13:21:33.694 Testing,total mean loss 0.00027,total acc 1.00000,best acc 1.00000
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.0001}
+mynet1
+best acc:  tensor(1.)
+best epoch: 39
+mynet1
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.0001}
+data length: 42000
+epoch: 0
+epoch: 1
+epoch: 2
+epoch: 3
+epoch: 4
+18:27:58.739 Testing,total mean loss 0.05080,total acc 0.98310,best acc 0.00000
+epoch: 5
+epoch: 6
+epoch: 7
+epoch: 8
+epoch: 9
+18:28:24.922 Testing,total mean loss 0.03533,total acc 0.98881,best acc 0.98310
+epoch: 10
+epoch: 11
+epoch: 12
+epoch: 13
+epoch: 14
+18:28:51.120 Testing,total mean loss 0.03277,total acc 0.99024,best acc 0.98881
+epoch: 15
+epoch: 16
+epoch: 17
+epoch: 18
+epoch: 19
+18:29:17.212 Testing,total mean loss 0.03042,total acc 0.99024,best acc 0.99024
+epoch: 20
+epoch: 21
+epoch: 22
+epoch: 23
+epoch: 24
+18:29:43.324 Testing,total mean loss 0.03318,total acc 0.98786,best acc 0.99024
+epoch: 25
+epoch: 26
+epoch: 27
+epoch: 28
+epoch: 29
+18:30:09.361 Testing,total mean loss 0.02979,total acc 0.99071,best acc 0.99024
+epoch: 30
+epoch: 31
+epoch: 32
+epoch: 33
+epoch: 34
+18:30:35.596 Testing,total mean loss 0.02599,total acc 0.99143,best acc 0.99071
+epoch: 35
+epoch: 36
+epoch: 37
+epoch: 38
+epoch: 39
+18:31:01.805 Testing,total mean loss 0.03041,total acc 0.99024,best acc 0.99143
+epoch: 40
+epoch: 41
+epoch: 42
+epoch: 43
+epoch: 44
+18:31:27.928 Testing,total mean loss 0.02683,total acc 0.99095,best acc 0.99143
+epoch: 45
+epoch: 46
+epoch: 47
+epoch: 48
+epoch: 49
+18:31:54.121 Testing,total mean loss 0.02295,total acc 0.99238,best acc 0.99143
+epoch: 50
+epoch: 51
+epoch: 52
+epoch: 53
+epoch: 54
+18:32:20.384 Testing,total mean loss 0.02673,total acc 0.99143,best acc 0.99238
+epoch: 55
+epoch: 56
+epoch: 57
+epoch: 58
+epoch: 59
+18:32:46.626 Testing,total mean loss 0.02503,total acc 0.99214,best acc 0.99238
+epoch: 60
+epoch: 61
+epoch: 62
+epoch: 63
+epoch: 64
+18:33:12.570 Testing,total mean loss 0.02437,total acc 0.99190,best acc 0.99238
+epoch: 65
+epoch: 66
+epoch: 67
+epoch: 68
+epoch: 69
+18:33:38.753 Testing,total mean loss 0.02184,total acc 0.99333,best acc 0.99238
+epoch: 70
+epoch: 71
+epoch: 72
+epoch: 73
+epoch: 74
+18:34:04.922 Testing,total mean loss 0.02638,total acc 0.99167,best acc 0.99333
+epoch: 75
+epoch: 76
+epoch: 77
+epoch: 78
+epoch: 79
+18:34:30.925 Testing,total mean loss 0.02634,total acc 0.99095,best acc 0.99333
+epoch: 80
+epoch: 81
+epoch: 82
+epoch: 83
+epoch: 84
+18:34:57.033 Testing,total mean loss 0.02358,total acc 0.99262,best acc 0.99333
+epoch: 85
+epoch: 86
+epoch: 87
+epoch: 88
+epoch: 89
+18:35:23.262 Testing,total mean loss 0.02372,total acc 0.99190,best acc 0.99333
+epoch: 90
+epoch: 91
+epoch: 92
+epoch: 93
+epoch: 94
+18:35:49.535 Testing,total mean loss 0.02428,total acc 0.99214,best acc 0.99333
+epoch: 95
+epoch: 96
+epoch: 97
+epoch: 98
+epoch: 99
+18:36:15.477 Testing,total mean loss 0.02335,total acc 0.99238,best acc 0.99333
+18:36:18.480 Testing,total mean loss 0.02335,total acc 0.99238,best acc 0.99333
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.0001}
+mynet1
+best acc:  tensor(0.9933)
+best epoch: 69
+mynet1
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.004, 'weight_decay': 0.0001}
+data length: 42000
+epoch: 0
+epoch: 1
+epoch: 2
+epoch: 3
+epoch: 4
+19:16:10.156 Testing,total mean loss 0.04007,total acc 0.98619,best acc 0.00000
+epoch: 5
+epoch: 6
+epoch: 7
+epoch: 8
+epoch: 9
+19:16:39.233 Testing,total mean loss 0.03136,total acc 0.98881,best acc 0.98619
+epoch: 10
+epoch: 11
+epoch: 12
+epoch: 13
+epoch: 14
+19:17:21.770 Testing,total mean loss 0.02910,total acc 0.99024,best acc 0.98881
+epoch: 15
+epoch: 16
+epoch: 17
+epoch: 18
+epoch: 19
+19:18:05.439 Testing,total mean loss 0.02647,total acc 0.99238,best acc 0.99024
+epoch: 20
+epoch: 21
+epoch: 22
+epoch: 23
+epoch: 24
+19:18:46.690 Testing,total mean loss 0.02726,total acc 0.99024,best acc 0.99238
+epoch: 25
+epoch: 26
+epoch: 27
+epoch: 28
+epoch: 29
+19:19:30.964 Testing,total mean loss 0.02628,total acc 0.99119,best acc 0.99238
+epoch: 30
+epoch: 31
+epoch: 32
+epoch: 33
+epoch: 34
+19:20:15.554 Testing,total mean loss 0.02265,total acc 0.99286,best acc 0.99238
+epoch: 35
+epoch: 36
+epoch: 37
+epoch: 38
+epoch: 39
+19:20:58.959 Testing,total mean loss 0.02194,total acc 0.99333,best acc 0.99286
+epoch: 40
+epoch: 41
+epoch: 42
+epoch: 43
+epoch: 44
+19:21:42.715 Testing,total mean loss 0.02045,total acc 0.99262,best acc 0.99333
+epoch: 45
+epoch: 46
+epoch: 47
+epoch: 48
+epoch: 49
+19:22:27.414 Testing,total mean loss 0.02181,total acc 0.99286,best acc 0.99333
+epoch: 50
+epoch: 51
+epoch: 52
+epoch: 53
+epoch: 54
+19:23:12.348 Testing,total mean loss 0.01967,total acc 0.99310,best acc 0.99333
+epoch: 55
+epoch: 56
+epoch: 57
+epoch: 58
+epoch: 59
+19:23:56.880 Testing,total mean loss 0.02234,total acc 0.99262,best acc 0.99333
+epoch: 60
+epoch: 61
+epoch: 62
+epoch: 63
+epoch: 64
+19:24:40.629 Testing,total mean loss 0.02158,total acc 0.99381,best acc 0.99333
+epoch: 65
+epoch: 66
+epoch: 67
+epoch: 68
+epoch: 69
+19:25:22.544 Testing,total mean loss 0.01918,total acc 0.99381,best acc 0.99381
+epoch: 70
+epoch: 71
+epoch: 72
+epoch: 73
+epoch: 74
+19:26:06.058 Testing,total mean loss 0.02006,total acc 0.99357,best acc 0.99381
+epoch: 75
+epoch: 76
+epoch: 77
+epoch: 78
+epoch: 79
+19:26:49.509 Testing,total mean loss 0.02037,total acc 0.99357,best acc 0.99381
+epoch: 80
+epoch: 81
+epoch: 82
+epoch: 83
+epoch: 84
+mynet1
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.004, 'weight_decay': 0.0001}
+data length: 42000
+epoch: 0
+epoch: 1
+epoch: 2
+epoch: 3
+epoch: 4
+19:28:26.744 Testing,total mean loss 0.04185,total acc 0.98452,best acc 0.00000
+epoch: 5
+epoch: 6
+epoch: 7
+epoch: 8
+epoch: 9
+19:29:22.385 Testing,total mean loss 0.03267,total acc 0.98857,best acc 0.98452
+epoch: 10
+epoch: 11
+epoch: 12
+epoch: 13
+epoch: 14
+19:30:20.916 Testing,total mean loss 0.02172,total acc 0.99119,best acc 0.98857
+epoch: 15
+epoch: 16
+epoch: 17
+epoch: 18
+epoch: 19
+19:31:19.562 Testing,total mean loss 0.02444,total acc 0.99071,best acc 0.99119
+epoch: 20
+epoch: 21
+epoch: 22
+epoch: 23
+epoch: 24
+19:32:19.904 Testing,total mean loss 0.02075,total acc 0.99333,best acc 0.99119
+epoch: 25
+epoch: 26
+epoch: 27
+epoch: 28
+epoch: 29
+19:33:09.838 Testing,total mean loss 0.02037,total acc 0.99286,best acc 0.99333
+epoch: 30
+epoch: 31
+epoch: 32
+epoch: 33
+epoch: 34
+19:34:00.272 Testing,total mean loss 0.02092,total acc 0.99262,best acc 0.99333
+epoch: 35
+epoch: 36
+epoch: 37
+epoch: 38
+epoch: 39
+19:34:50.625 Testing,total mean loss 0.02230,total acc 0.99238,best acc 0.99333
+epoch: 40
+epoch: 41
+epoch: 42
+epoch: 43
+epoch: 44
+19:35:36.648 Testing,total mean loss 0.02096,total acc 0.99333,best acc 0.99333
+epoch: 45
+epoch: 46
+epoch: 47
+epoch: 48
+epoch: 49
+19:36:19.832 Testing,total mean loss 0.02055,total acc 0.99381,best acc 0.99333
+epoch: 50
+epoch: 51
+epoch: 52
+epoch: 53
+epoch: 54
+19:37:02.622 Testing,total mean loss 0.02173,total acc 0.99286,best acc 0.99381
+epoch: 55
+epoch: 56
+epoch: 57
+epoch: 58
+epoch: 59
+19:37:45.629 Testing,total mean loss 0.02204,total acc 0.99405,best acc 0.99381
+epoch: 60
+epoch: 61
+epoch: 62
+epoch: 63
+epoch: 64
+19:38:28.348 Testing,total mean loss 0.02134,total acc 0.99262,best acc 0.99405
+epoch: 65
+epoch: 66
+epoch: 67
+epoch: 68
+epoch: 69
+19:39:12.634 Testing,total mean loss 0.02329,total acc 0.99310,best acc 0.99405
+epoch: 70
+epoch: 71
+epoch: 72
+epoch: 73
+epoch: 74
+19:39:56.925 Testing,total mean loss 0.02185,total acc 0.99333,best acc 0.99405
+epoch: 75
+epoch: 76
+epoch: 77
+epoch: 78
+epoch: 79
+19:40:39.289 Testing,total mean loss 0.02117,total acc 0.99333,best acc 0.99405
+epoch: 80
+epoch: 81
+epoch: 82
+epoch: 83
+epoch: 84
+19:41:24.601 Testing,total mean loss 0.02355,total acc 0.99333,best acc 0.99405
+epoch: 85
+epoch: 86
+epoch: 87
+epoch: 88
+epoch: 89
+19:42:10.730 Testing,total mean loss 0.02227,total acc 0.99357,best acc 0.99405
+epoch: 90
+epoch: 91
+epoch: 92
+epoch: 93
+epoch: 94
+19:42:56.902 Testing,total mean loss 0.02148,total acc 0.99357,best acc 0.99405
+epoch: 95
+epoch: 96
+epoch: 97
+epoch: 98
+epoch: 99
+19:43:42.627 Testing,total mean loss 0.02269,total acc 0.99381,best acc 0.99405
+19:43:49.569 Testing,total mean loss 0.02269,total acc 0.99381,best acc 0.99405
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.004, 'weight_decay': 0.0001}
+mynet1
+best acc:  tensor(0.9940)
+best epoch: 59
+mynet1
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.004, 'weight_decay': 0.0001}
+data length: 42000
+epoch: 0
+epoch: 1
+epoch: 2
+epoch: 3
+epoch: 4
+19:46:22.019 Testing,total mean loss 0.01957,total acc 0.99405,best acc 0.00000
+epoch: 5
+epoch: 6
+epoch: 7
+epoch: 8
+epoch: 9
+19:46:54.143 Testing,total mean loss 0.01133,total acc 0.99667,best acc 0.99405
+epoch: 10
+epoch: 11
+epoch: 12
+epoch: 13
+epoch: 14
+19:47:26.067 Testing,total mean loss 0.00536,total acc 0.99881,best acc 0.99667
+epoch: 15
+epoch: 16
+epoch: 17
+epoch: 18
+epoch: 19
+19:47:57.569 Testing,total mean loss 0.00422,total acc 0.99857,best acc 0.99881
+epoch: 20
+epoch: 21
+epoch: 22
+epoch: 23
+epoch: 24
+19:48:29.311 Testing,total mean loss 0.00323,total acc 0.99976,best acc 0.99881
+epoch: 25
+epoch: 26
+epoch: 27
+epoch: 28
+epoch: 29
+19:49:01.430 Testing,total mean loss 0.00256,total acc 0.99952,best acc 0.99976
+epoch: 30
+epoch: 31
+epoch: 32
+epoch: 33
+epoch: 34
+19:49:33.400 Testing,total mean loss 0.00171,total acc 0.99976,best acc 0.99976
+epoch: 35
+epoch: 36
+epoch: 37
+epoch: 38
+epoch: 39
+19:50:04.915 Testing,total mean loss 0.00148,total acc 1.00000,best acc 0.99976
+epoch: 40
+epoch: 41
+epoch: 42
+epoch: 43
+epoch: 44
+19:50:36.898 Testing,total mean loss 0.00092,total acc 1.00000,best acc 1.00000
+epoch: 45
+epoch: 46
+epoch: 47
+epoch: 48
+epoch: 49
+19:51:08.709 Testing,total mean loss 0.00085,total acc 1.00000,best acc 1.00000
+epoch: 50
+epoch: 51
+epoch: 52
+epoch: 53
+epoch: 54
+19:51:40.437 Testing,total mean loss 0.00074,total acc 1.00000,best acc 1.00000
+epoch: 55
+epoch: 56
+epoch: 57
+epoch: 58
+epoch: 59
+19:52:11.538 Testing,total mean loss 0.00052,total acc 1.00000,best acc 1.00000
+epoch: 60
+epoch: 61
+epoch: 62
+epoch: 63
+epoch: 64
+19:52:43.195 Testing,total mean loss 0.00044,total acc 1.00000,best acc 1.00000
+epoch: 65
+epoch: 66
+epoch: 67
+epoch: 68
+epoch: 69
+19:53:15.032 Testing,total mean loss 0.00047,total acc 1.00000,best acc 1.00000
+epoch: 70
+epoch: 71
+epoch: 72
+epoch: 73
+epoch: 74
+19:53:46.565 Testing,total mean loss 0.00041,total acc 1.00000,best acc 1.00000
+epoch: 75
+epoch: 76
+epoch: 77
+epoch: 78
+epoch: 79
+19:54:17.288 Testing,total mean loss 0.00032,total acc 1.00000,best acc 1.00000
+epoch: 80
+epoch: 81
+epoch: 82
+epoch: 83
+epoch: 84
+19:54:48.835 Testing,total mean loss 0.00034,total acc 1.00000,best acc 1.00000
+epoch: 85
+epoch: 86
+epoch: 87
+epoch: 88
+epoch: 89
+19:55:20.693 Testing,total mean loss 0.00024,total acc 1.00000,best acc 1.00000
+epoch: 90
+epoch: 91
+epoch: 92
+epoch: 93
+epoch: 94
+19:55:52.840 Testing,total mean loss 0.00022,total acc 1.00000,best acc 1.00000
+epoch: 95
+epoch: 96
+epoch: 97
+epoch: 98
+epoch: 99
+19:56:23.759 Testing,total mean loss 0.00024,total acc 1.00000,best acc 1.00000
+19:56:27.726 Testing,total mean loss 0.00024,total acc 1.00000,best acc 1.00000
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.004, 'weight_decay': 0.0001}
+mynet1
+best acc:  tensor(1.)
+best epoch: 39
+cnn
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.004, 'weight_decay': 0.0001}
+data length: 42000
+epoch: 0

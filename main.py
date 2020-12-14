@@ -21,16 +21,16 @@ from tqdm import tqdm
 parser = argparse.ArgumentParser(description='PyTorch Digit Recoginer Training')
 parser.add_argument('-e','--epoch',default=100,type=int,metavar='N',help='max epoch')
 parser.add_argument('-w','--wd',default=0.001,type=float,metavar='beta',help='weight decay')
-# from torchviz import make_dot
-#logging.basicConfig(level=logging.DEBUG, filename='new.log',format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s')
+parser.add_argument('-n','--net',default=0,type=int,metavar='n',help='net option')
 path = os.path.abspath(os.path.dirname(__file__))
 sys.stdout = Logger(path+'/log.txt')
 summary_writer = SummaryWriter('runs/dy')
 losses = AverageMeter()
 
-net_list = {0:'mynet',1:'mynet1',2:'mynet2',3:'Rnn',4:'mlp',5:'VGG_simple'}
-# net_option = net_list[1]
-net_option = 'mynet1'
+args = parser.parse_args()
+net_list = {0:'cnn',1:'mlp_with_bn',2:'rnn',3:'cnn_with_bn',4:
+        'mlp'}
+net_option = net_list[args.net]
 model_save_path = './model.pt'
 output_path = net_option+'pred.csv'
 best_acc = 0
@@ -38,25 +38,16 @@ best_acc = 0
 if os.path.exists(output_path):
     os.remove(output_path)
 
-# if os.path.exists('runs/dy'):
-#     os.system('rm -rf runs/dy')
 
-config_formynet1 = {
+config_forcnn = {
     'learning_rate': 0.01,
     'batch_size': 64,
     'max_epoch': 100,
     'test_epoch': 5,
-    'momentum': 0.002,
+    'momentum': 0.004,
     'weight_decay':0.0001,
 }
-config_formynet2 = {
-    'learning_rate': 0.01,
-    'batch_size': 128,
-    'max_epoch': 100,
-    'test_epoch': 5,
-    'momentum': 0.001,
-    'weight_decay':0.0001
-}
+
 config_formlp = {
     'learning_rate': 0.01,
     'batch_size': 128,
@@ -73,8 +64,7 @@ config_forlstm = {
     'momentum': 0.001,
     'weight_decay':0.0001
 }
-args = parser.parse_args()
-config = config_formynet1
+config = config_forcnn
 #config['max_epoch'] = args.epoch
 #config['weight_decay'] = args.wd
 print(net_option)
@@ -239,12 +229,12 @@ def main():
         if epoch % 50 == 0:
             if not os.path.exists('./'+net_option):
                 os.system('mkdir '+net_option)
-            save_checkpoint(model,optimizer,epoch,'./'+ net_option)
+            #save_checkpoint(model,optimizer,epoch,'./'+ net_option)
         if epoch == 90:
             if not os.path.exists('./'+net_option):
                 os.system('mkdir '+net_option)
             save_checkpoint(model,optimizer,epoch,'./'+ net_option)
-    save_checkpoint(model,optimizer,epoch,'./'+ net_option)
+    #save_checkpoint(model,optimizer,epoch,'./'+ net_option)
     acc = validate(x_val, y_val, model, criterion)
     if best_acc<acc:
         best_acc = acc
@@ -254,6 +244,7 @@ def main():
     print(config)
     print(net_option)
     print('best acc: ',best_acc)
+    print('best epoch:',best_epoch)
 
     torch.save(model,model_save_path)
 
