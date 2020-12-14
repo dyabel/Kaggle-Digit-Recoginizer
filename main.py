@@ -16,16 +16,24 @@ import pandas as pd
 import csv
 from logger import Logger
 from torch.utils.tensorboard import SummaryWriter
-
-
+import argparse
+from tqdm import tqdm
+parser = argparse.ArgumentParser(description='PyTorch Digit Recoginer Training')
+parser.add_argument('-e','--epoch',default=100,type=int,metavar='N',help='max epoch')
+parser.add_argument('-w','--wd',default=0.001,type=float,metavar='beta',help='weight decay')
+# from torchviz import make_dot
+#logging.basicConfig(level=logging.DEBUG, filename='new.log',format='%(asctime)s - %(pathname)s[line:%(lineno)d] - %(levelname)s: %(message)s')
 path = os.path.abspath(os.path.dirname(__file__))
 sys.stdout = Logger(path+'/log.txt')
-tensor_writer = SummaryWriter('runs/dy')
+summary_writer = SummaryWriter('runs/dy')
 losses = AverageMeter()
 
-net_option='mynet1'
+net_list = {0:'mynet',1:'mynet1',2:'mynet2',3:'Rnn',4:'mlp',5:'VGG_simple'}
+# net_option = net_list[1]
+net_option = 'mynet1'
 model_save_path = './model.pt'
-output_path = './pred.csv'
+output_path = net_option+'pred.csv'
+best_acc = 0
 
 if os.path.exists(output_path):
     os.remove(output_path)
@@ -33,7 +41,15 @@ if os.path.exists(output_path):
 # if os.path.exists('runs/dy'):
 #     os.system('rm -rf runs/dy')
 
-config = {
+config_formynet1 = {
+    'learning_rate': 0.01,
+    'batch_size': 64,
+    'max_epoch': 100,
+    'test_epoch': 5,
+    'momentum': 0.002,
+    'weight_decay':0.0001,
+}
+config_formynet2 = {
     'learning_rate': 0.01,
     'batch_size': 128,
     'max_epoch': 100,
@@ -41,16 +57,39 @@ config = {
     'momentum': 0.001,
     'weight_decay':0.0001
 }
-
+config_formlp = {
+    'learning_rate': 0.01,
+    'batch_size': 128,
+    'max_epoch': 100,
+    'test_epoch': 5,
+    'momentum': 0.001,
+    'weight_decay':0.0001
+}
+config_forlstm = {
+    'learning_rate': 0.01,
+    'batch_size': 128,
+    'max_epoch': 500,
+    'test_epoch': 5,
+    'momentum': 0.001,
+    'weight_decay':0.0001
+}
+args = parser.parse_args()
+config = config_formynet1
+#config['max_epoch'] = args.epoch
+#config['weight_decay'] = args.wd
+print(net_option)
+print(config)
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
 device = torch.device('cuda:0')
+
+# device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 def data_split(x_data, y_data, batch_size, quota = 10,seed = 100 ):
     data_num = len(x_data)
     val_num = data_num//quota
     train_num = data_num - val_num
     np.random.seed(seed)
-    i = np.random.randint(0,10)
+    i = np.random.randint(0,quota)
     if i == 0:
         return x_data[i*val_num+val_num:data_num], y_data[i*val_num+val_num:data_num], x_data[i*val_num:i*val_num+val_num],\
               y_data[i*val_num:i*val_num+val_num]
@@ -79,16 +118,18 @@ def train(x_train, y_train, model, criterion, optimizer, batch_size,epoch):
         # y_pred = model(input).type(torch.LongTensor)
         # label = label.type(torch.LongTensor)
         loss = criterion(y_pred,label)
+        # print(loss)
         losses.update(loss.item(),input.size(0))
         optimizer.zero_grad()
         loss.backward()
         optimizer.step()
 
-    tensor_writer.add_scalar('loss',losses.avg,epoch)
+    summary_writer.add_scalar('loss',losses.avg,epoch)
 
 
 
 def validate(x_val, y_val, model, criterion):
+    global best_acc
     model.eval()
     acc_list = []
     loss_list = []
@@ -105,12 +146,15 @@ def validate(x_val, y_val, model, criterion):
             loss = criterion(output,label)
             loss_list.append(loss.cpu().numpy())
             pred = torch.argmax(output)
-            if pred == label:
-                acc_list.append(1)
-            else:
-                acc_list.append(0)
-    msg = 'Testing,total mean loss %.5f,total acc %.5f' %(np.mean(loss_list),np.mean(acc_list))
+            acc_list.append(pred.eq(label).sum())
+            #if pred == label:
+            #    acc_list.append(1)
+            #else:
+            #    acc_list.append(0)
+    acc = torch.mean(torch.Tensor(acc_list))
+    msg = 'Testing,total mean loss %.5f,total acc %.5f,best acc %.5f' %(np.mean(loss_list),acc,best_acc)
     LOG_INFO(msg)
+    return acc
 
 
 
@@ -146,7 +190,23 @@ def test(model):
     # df = pd.DataFrame({'ImageId':id_list,'Label':pred_list})
     # df.to_csv('./pred.csv')
 
+def load_checkpoint(model,optimizer,path):
+    checkpoint = torch.load(path)
+    model.load_state_dict(checkpoint['model'])
+    optimizer.load_state_dict(checkpoint['optimizer'])
+    start_epoch = checkpoint['epoch'] + 1
+    return start_epoch
 
+def save_checkpoint(model, optimizer, epoch, path_prefix='./'):
+    if not os.path.exists(path_prefix):
+        os.system('mkdir -p '+ path_prefix)
+    state = {'model': model.state_dict(), 'optimizer': optimizer.state_dict(), 'epoch': epoch}
+    torch.save(state, os.path.join(path_prefix, net_option + '_' + 'epoch' + str(epoch) + '.pt'))
+def save_best(model, optimizer, epoch, path_prefix='./'):
+    if not os.path.exists(path_prefix):
+        os.system('mkdir -p '+ path_prefix)
+    state = {'model': model.state_dict(), 'optimizer': optimizer.state_dict(), 'epoch': epoch}
+    torch.save(state, os.path.join(path_prefix, net_option + '_best' + '.pt'))
 
 
 def main():
@@ -155,20 +215,53 @@ def main():
     # data_spliter = data_split(x_data,y_data,batch_size=config['batch_size'])
     model = net.__dict__[net_option]()
     model.cuda()
+    best_epoch = 0
     # model.to(device)
+    global best_acc
     criterion = nn.CrossEntropyLoss()
     criterion.cuda()
     optimizer = torch.optim.SGD(model.parameters(),config['learning_rate'],momentum=config['momentum'],weight_decay=config['weight_decay'])
-    for epoch in range(config['max_epoch']):
+    # optimizer = torch.optim.Adam(model.parameters(),config['learning_rate'],momentum=config['momentum'],weight_decay=config['weight_decay'])
+    start_epoch = 0
+    #start_epoch = load_checkpoint(model,optimizer,'./mynet1/mynet1_epoch50.pt')
+    x_train, y_train, x_val, y_val = data_split(x_data, y_data, batch_size=config['batch_size'], quota=10,seed=10)
+    for epoch in tqdm(range(start_epoch,config['max_epoch'])):
         print('epoch:',epoch)
-        x_train, y_train, x_val, y_val = data_split(x_data,y_data,batch_size=config['batch_size'],seed=epoch)
         adjust_learning_rate(optimizer, epoch)
         train(x_train, y_train, model, criterion, optimizer, config['batch_size'] ,epoch)
-        if epoch % config['test_epoch'] == 0:
+        #train(x_data, y_data, model, criterion, optimizer, config['batch_size'] ,epoch)
+        if (epoch+1) % config['test_epoch'] == 0:
             acc = validate(x_val, y_val, model, criterion)
+            if best_acc<acc:
+                best_acc = acc
+                best_epoch = epoch
+                save_best(model,optimizer,epoch,'./best')
+        if epoch % 50 == 0:
+            if not os.path.exists('./'+net_option):
+                os.system('mkdir '+net_option)
+            save_checkpoint(model,optimizer,epoch,'./'+ net_option)
+        if epoch == 90:
+            if not os.path.exists('./'+net_option):
+                os.system('mkdir '+net_option)
+            save_checkpoint(model,optimizer,epoch,'./'+ net_option)
+    save_checkpoint(model,optimizer,epoch,'./'+ net_option)
+    acc = validate(x_val, y_val, model, criterion)
+    if best_acc<acc:
+        best_acc = acc
+        best_epoch = epoch
+        save_best(model,optimizer,epoch,'./best')
+
+    print(config)
+    print(net_option)
+    print('best acc: ',best_acc)
 
     torch.save(model,model_save_path)
+
+    # net_plot = make_dot(model(x),params = dict(model.named_parameters()))
     test(model)
+    model.cpu()
+    x = torch.randn(1, 1, 28, 28)
+    summary_writer.add_graph(model, (x,))
 
 if __name__ == '__main__':
     main()
