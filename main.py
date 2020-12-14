@@ -17,11 +17,15 @@ import csv
 from logger import Logger
 from torch.utils.tensorboard import SummaryWriter
 import argparse
+import json
 from tqdm import tqdm
 parser = argparse.ArgumentParser(description='PyTorch Digit Recoginer Training')
 parser.add_argument('-e','--epoch',default=100,type=int,metavar='N',help='max epoch')
 parser.add_argument('-w','--wd',default=0.001,type=float,metavar='beta',help='weight decay')
 parser.add_argument('-n','--net',default=0,type=int,metavar='n',help='net option')
+parser.add_argument('--all_data',default=0,type=int,metavar='a',help='whether use all data to train')
+parser.add_argument('--config_path',default='./cnn_config.json',type=str,help='config of hyper parameters')
+parser.add_argument('--output_path',default='pred.csv',type=str,help='output path')
 path = os.path.abspath(os.path.dirname(__file__))
 sys.stdout = Logger(path+'/log.txt')
 summary_writer = SummaryWriter('runs/dy')
@@ -32,41 +36,17 @@ net_list = {0:'cnn',1:'mlp_with_bn',2:'rnn',3:'cnn_with_bn',4:
         'mlp'}
 net_option = net_list[args.net]
 model_save_path = './model.pt'
-output_path = net_option+'pred.csv'
+output_path = args.output_path
 best_acc = 0
 
 if os.path.exists(output_path):
     os.remove(output_path)
 
 
-config_forcnn = {
-    'learning_rate': 0.01,
-    'batch_size': 64,
-    'max_epoch': 100,
-    'test_epoch': 5,
-    'momentum': 0.004,
-    'weight_decay':0.0001,
-}
 
-config_formlp = {
-    'learning_rate': 0.01,
-    'batch_size': 128,
-    'max_epoch': 100,
-    'test_epoch': 5,
-    'momentum': 0.001,
-    'weight_decay':0.0001
-}
-config_forlstm = {
-    'learning_rate': 0.01,
-    'batch_size': 128,
-    'max_epoch': 500,
-    'test_epoch': 5,
-    'momentum': 0.001,
-    'weight_decay':0.0001
-}
-config = config_forcnn
-#config['max_epoch'] = args.epoch
-#config['weight_decay'] = args.wd
+config = json.load(open(args.config_path,'r'))
+config['max_epoch'] = args.epoch
+config['weight_decay'] = args.wd
 print(net_option)
 print(config)
 os.environ["CUDA_VISIBLE_DEVICES"] = "0"
@@ -218,8 +198,10 @@ def main():
     for epoch in tqdm(range(start_epoch,config['max_epoch'])):
         print('epoch:',epoch)
         adjust_learning_rate(optimizer, epoch)
-        train(x_train, y_train, model, criterion, optimizer, config['batch_size'] ,epoch)
-        #train(x_data, y_data, model, criterion, optimizer, config['batch_size'] ,epoch)
+        if args.all_data == 0:
+            train(x_train, y_train, model, criterion, optimizer, config['batch_size'] ,epoch)
+        else:
+            train(x_data, y_data, model, criterion, optimizer, config['batch_size'] ,epoch)
         if (epoch+1) % config['test_epoch'] == 0:
             acc = validate(x_val, y_val, model, criterion)
             if best_acc<acc:

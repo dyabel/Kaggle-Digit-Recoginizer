@@ -3496,3 +3496,327 @@ cnn
 {'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.004, 'weight_decay': 0.0001}
 data length: 42000
 epoch: 0
+mlp_with_bn
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.004, 'weight_decay': 0.0001}
+data length: 42000
+epoch: 0
+epoch: 1
+epoch: 2
+epoch: 3
+epoch: 4
+19:59:34.140 Testing,total mean loss 1.52491,total acc 0.95548,best acc 0.00000
+epoch: 5
+epoch: 6
+epoch: 7
+epoch: 8
+epoch: 9
+20:00:00.242 Testing,total mean loss 1.50389,total acc 0.96714,best acc 0.95548
+epoch: 10
+epoch: 11
+epoch: 12
+epoch: 13
+epoch: 14
+20:00:26.315 Testing,total mean loss 1.49768,total acc 0.97095,best acc 0.96714
+epoch: 15
+epoch: 16
+epoch: 17
+epoch: 18
+epoch: 19
+20:00:52.066 Testing,total mean loss 1.49467,total acc 0.97286,best acc 0.97095
+epoch: 20
+epoch: 21
+epoch: 22
+epoch: 23
+epoch: 24
+20:01:17.680 Testing,total mean loss 1.49239,total acc 0.97452,best acc 0.97286
+epoch: 25
+epoch: 26
+epoch: 27
+epoch: 28
+epoch: 29
+20:01:43.552 Testing,total mean loss 1.49128,total acc 0.97595,best acc 0.97452
+epoch: 30
+epoch: 31
+epoch: 32
+epoch: 33
+epoch: 34
+20:02:08.968 Testing,total mean loss 1.49053,total acc 0.97619,best acc 0.97595
+epoch: 35
+epoch: 36
+epoch: 37
+epoch: 38
+epoch: 39
+20:02:34.409 Testing,total mean loss 1.49017,total acc 0.97595,best acc 0.97619
+epoch: 40
+epoch: 41
+epoch: 42
+epoch: 43
+epoch: 44
+20:02:59.828 Testing,total mean loss 1.48984,total acc 0.97571,best acc 0.97619
+epoch: 45
+epoch: 46
+epoch: 47
+epoch: 48
+epoch: 49
+20:03:25.496 Testing,total mean loss 1.48955,total acc 0.97690,best acc 0.97619
+epoch: 50
+epoch: 51
+epoch: 52
+epoch: 53
+epoch: 54
+20:03:52.280 Testing,total mean loss 1.48925,total acc 0.97738,best acc 0.97690
+epoch: 55
+epoch: 56
+epoch: 57
+epoch: 58
+epoch: 59
+20:04:18.236 Testing,total mean loss 1.48892,total acc 0.97762,best acc 0.97738
+epoch: 60
+epoch: 61
+epoch: 62
+epoch: 63
+epoch: 64
+20:04:44.790 Testing,total mean loss 1.48878,total acc 0.97738,best acc 0.97762
+epoch: 65
+epoch: 66
+epoch: 67
+epoch: 68
+epoch: 69
+20:05:11.960 Testing,total mean loss 1.48869,total acc 0.97762,best acc 0.97762
+epoch: 70
+epoch: 71
+epoch: 72
+epoch: 73
+epoch: 74
+20:05:39.178 Testing,total mean loss 1.48854,total acc 0.97738,best acc 0.97762
+epoch: 75
+epoch: 76
+epoch: 77
+epoch: 78
+epoch: 79
+20:06:05.016 Testing,total mean loss 1.48848,total acc 0.97762,best acc 0.97762
+epoch: 80
+epoch: 81
+epoch: 82
+epoch: 83
+epoch: 84
+20:06:30.774 Testing,total mean loss 1.48845,total acc 0.97714,best acc 0.97762
+epoch: 85
+epoch: 86
+epoch: 87
+epoch: 88
+epoch: 89
+20:06:57.009 Testing,total mean loss 1.48840,total acc 0.97690,best acc 0.97762
+epoch: 90
+epoch: 91
+epoch: 92
+epoch: 93
+epoch: 94
+20:07:22.654 Testing,total mean loss 1.48836,total acc 0.97714,best acc 0.97762
+epoch: 95
+epoch: 96
+epoch: 97
+epoch: 98
+epoch: 99
+20:07:48.287 Testing,total mean loss 1.48833,total acc 0.97667,best acc 0.97762
+20:07:51.752 Testing,total mean loss 1.48833,total acc 0.97667,best acc 0.97762
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.004, 'weight_decay': 0.0001}
+mlp_with_bn
+best acc:  tensor(0.9776)
+best epoch: 59
+cnn
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.001}
+data length: 42000
+mlp_with_bn
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.001}
+data length: 42000
+epoch: 0
+rnn
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.001}
+data length: 42000
+epoch: 0
+mlp_with_bn
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.001}
+data length: 42000
+epoch: 0
+epoch: 1
+epoch: 2
+epoch: 3
+epoch: 4
+20:19:37.943 Testing,total mean loss 1.52710,total acc 0.95357,best acc 0.00000
+epoch: 5
+epoch: 6
+epoch: 7
+epoch: 8
+epoch: 9
+20:20:04.123 Testing,total mean loss 1.50689,total acc 0.96500,best acc 0.95357
+epoch: 10
+epoch: 11
+epoch: 12
+epoch: 13
+epoch: 14
+20:20:30.710 Testing,total mean loss 1.50094,total acc 0.97000,best acc 0.96500
+epoch: 15
+epoch: 16
+epoch: 17
+epoch: 18
+epoch: 19
+20:20:56.844 Testing,total mean loss 1.49812,total acc 0.97214,best acc 0.97000
+epoch: 20
+epoch: 21
+epoch: 22
+epoch: 23
+epoch: 24
+20:21:22.281 Testing,total mean loss 1.49636,total acc 0.97381,best acc 0.97214
+epoch: 25
+epoch: 26
+epoch: 27
+epoch: 28
+epoch: 29
+20:21:48.305 Testing,total mean loss 1.49520,total acc 0.97429,best acc 0.97381
+epoch: 30
+epoch: 31
+epoch: 32
+epoch: 33
+epoch: 34
+20:22:14.533 Testing,total mean loss 1.49472,total acc 0.97524,best acc 0.97429
+epoch: 35
+epoch: 36
+epoch: 37
+epoch: 38
+epoch: 39
+20:22:40.540 Testing,total mean loss 1.49441,total acc 0.97500,best acc 0.97524
+epoch: 40
+epoch: 41
+epoch: 42
+epoch: 43
+epoch: 44
+20:23:06.557 Testing,total mean loss 1.49407,total acc 0.97524,best acc 0.97524
+epoch: 45
+epoch: 46
+epoch: 47
+epoch: 48
+epoch: 49
+20:23:32.417 Testing,total mean loss 1.49377,total acc 0.97500,best acc 0.97524
+epoch: 50
+epoch: 51
+epoch: 52
+epoch: 53
+epoch: 54
+20:23:58.203 Testing,total mean loss 1.49354,total acc 0.97548,best acc 0.97524
+epoch: 55
+epoch: 56
+epoch: 57
+epoch: 58
+epoch: 59
+20:24:24.044 Testing,total mean loss 1.49327,total acc 0.97524,best acc 0.97548
+epoch: 60
+epoch: 61
+epoch: 62
+epoch: 63
+epoch: 64
+20:24:50.035 Testing,total mean loss 1.49314,total acc 0.97524,best acc 0.97548
+epoch: 65
+epoch: 66
+epoch: 67
+epoch: 68
+epoch: 69
+20:25:16.001 Testing,total mean loss 1.49306,total acc 0.97476,best acc 0.97548
+epoch: 70
+epoch: 71
+epoch: 72
+epoch: 73
+epoch: 74
+20:25:41.989 Testing,total mean loss 1.49299,total acc 0.97476,best acc 0.97548
+epoch: 75
+epoch: 76
+epoch: 77
+epoch: 78
+epoch: 79
+20:26:07.645 Testing,total mean loss 1.49293,total acc 0.97476,best acc 0.97548
+epoch: 80
+epoch: 81
+epoch: 82
+epoch: 83
+epoch: 84
+20:26:33.518 Testing,total mean loss 1.49292,total acc 0.97452,best acc 0.97548
+epoch: 85
+epoch: 86
+epoch: 87
+epoch: 88
+epoch: 89
+20:27:00.008 Testing,total mean loss 1.49291,total acc 0.97476,best acc 0.97548
+epoch: 90
+epoch: 91
+epoch: 92
+epoch: 93
+epoch: 94
+20:27:27.452 Testing,total mean loss 1.49289,total acc 0.97452,best acc 0.97548
+epoch: 95
+epoch: 96
+epoch: 97
+epoch: 98
+epoch: 99
+20:27:53.734 Testing,total mean loss 1.49288,total acc 0.97452,best acc 0.97548
+20:27:57.506 Testing,total mean loss 1.49288,total acc 0.97452,best acc 0.97548
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.001}
+mlp_with_bn
+best acc:  tensor(0.9755)
+best epoch: 54
+cnn
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.001}
+data length: 42000
+epoch: 0
+epoch: 1
+epoch: 2
+cnn
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.001}
+data length: 42000
+cnn
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.001}
+data length: 42000
+epoch: 0
+cnn
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.001}
+data length: 42000
+epoch: 0
+epoch: 1
+epoch: 2
+epoch: 3
+epoch: 4
+20:40:41.347 Testing,total mean loss 0.06424,total acc 0.98119,best acc 0.00000
+epoch: 5
+epoch: 6
+epoch: 7
+epoch: 8
+epoch: 9
+20:41:09.915 Testing,total mean loss 0.02995,total acc 0.98929,best acc 0.98119
+epoch: 10
+epoch: 11
+epoch: 12
+epoch: 13
+epoch: 14
+20:41:39.472 Testing,total mean loss 0.03221,total acc 0.98929,best acc 0.98929
+epoch: 15
+epoch: 16
+epoch: 17
+epoch: 18
+epoch: 19
+20:42:09.010 Testing,total mean loss 0.02579,total acc 0.98976,best acc 0.98929
+epoch: 20
+epoch: 21
+epoch: 22
+epoch: 23
+cnn
+{'learning_rate': 0.01, 'batch_size': 64, 'max_epoch': 100, 'test_epoch': 5, 'momentum': 0.001, 'weight_decay': 0.001}
+data length: 42000
+epoch: 0
+epoch: 1
+epoch: 2
+epoch: 3
+epoch: 4
+20:43:11.761 Testing,total mean loss 0.03592,total acc 0.98857,best acc 0.00000
+epoch: 5
+epoch: 6
+epoch: 7
+epoch: 8
